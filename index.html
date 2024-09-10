@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Ski Ingé - Tinder Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Sidebar Gauche - Matches -->
+<div class="sidebar">
+    <!-- Logo -->
+    <img src="https://www.creads.com/wp-content/uploads/2021/05/tinder_logo.jpg" alt="Logo App" class="logo">
+    <div class="site">Tindur</div>
+    
+    <!-- Profil de l'utilisateur -->
+    <div class="user-profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBnxKyLI6UnbmBJhDsyzSF1KQK9s_j2X2S6A&s" alt="User Photo">
+        <div>Team Ski Ingé</div>
+    </div>
+
+    <!-- Liste de matches -->
+    <div class="matches-header">Discussions</div>
+    
+    <div class="match">
+        <img src="https://aees.be/img/logo_aees.png" alt="Match Photo">
+        <div>
+            <h4>AEES</h4>
+            <p>Ouin ouin la team ski c'est pas que le cb ingé </p>
+        </div>
+    </div>
+    <div class="match">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWm8De7bEzuhYHOfye5SWWrlOXBLrt2atFQ&s" alt="Match Photo">
+        <div>
+            <h4>Ski HEC</h4>
+            <p>Pourquoi même les connards de notre fac partent avec vous ?</p>
+        </div>
+    </div>
+    <div class="match">
+        <img src="https://via.placeholder.com/40" alt="Match Photo">
+        <div>
+            <h4>Emonts</h4>
+            <p>Le RDV à 09h00 tient toujours pour la matinale ski^^ (VENEZZZZ!)</p>
+        </div>
+    </div>
+    <div class="match">
+        <img src="https://via.placeholder.com/40" alt="Match Photo">
+        <div>
+            <h4>Iannello</h4>
+            <p>Laissez-moi revenir, promis je serai sage</p>
+        </div>
+    </div>
+  <div class="match">
+        <img src="https://via.placeholder.com/40" alt="Match Photo">
+        <div>
+            <h4>Emonts</h4>
+            <p>Le RDV à 09h00 tient toujours pour la matinale ski^^ (VENEZZZZ!)</p>
+        </div>
+    </div>
+  <div class="match">
+        <img src="https://via.placeholder.com/40" alt="Match Photo">
+        <div>
+            <h4>Emonts</h4>
+            <p>Le RDV à 09h00 tient toujours pour la matinale ski^^ (VENEZZZZ!)</p>
+        </div>
+    </div>
+  <div class="match">
+        <img src="https://via.placeholder.com/40" alt="Match Photo">
+        <div>
+            <h4>Emonts</h4>
+            <p>Le RDV à 09h00 tient toujours pour la matinale ski^^ (VENEZZZZ!)</p>
+        </div>
+    </div>
+  <div class="match">
+        <img src="https://via.placeholder.com/40" alt="Match Photo">
+        <div>
+            <h4>Emonts</h4>
+            <p>Le RDV à 09h00 tient toujours pour la matinale ski^^ </p>
+        </div>
+    </div>
+</div>
+  
+<!-- Section Centrale - Profil -->
+<div class="main">
+    <div class="profile-card">
+        <img src="https://i.imgur.com/MKGLoZI.jpeg" alt="Profile Photo" class="profile-photo" onclick="openProfile()">
+        <div class="profile-details">
+            <h2>Vranken, 19</h2>
+            <p>Homme célibataire blanc hétéro cisgenre de type bipède</p>
+        </div>
+        <!-- Zone vide pour les boutons -->
+        <div class="buttons-placeholder"></div>
+    </div>
+  
+  <div class="main-container">
+    <!-- Conteneur des boutons en dehors de profile-card -->
+    <div class="buttons-container">
+        <img id="dislikeButton" src="https://i.imgur.com/18FAXLL.png" alt="Dislike" class="dislike-button" onclick="handleDislike()">
+        <img src="https://i.imgur.com/xa9bzQ4.png" alt="Super Like" class="superlike-button" onclick="triggerLikeAnimation()">
+        <img src="https://i.imgur.com/gD4lvyZ.png" alt="Like" class="like-button" onclick="triggerLikeAnimation()">
+    </div>
+
+    <!-- Conteneur de célébration (avec l'image rebondissante) -->
+    <div class="celebration-container" id="celebrationContainer" style="display: none;">
+        <img src="https://i.imgur.com/u2dsIxR.png" alt="It's a Match!" class="match-image" id="matchImage">
+        <div class="fireworks-container" id="fireworksContainer"></div>
+    </div>
+    
+  
+    <!-- Flèches pour swiper -->
+    <img style="background-color: #f3f3f3;" src="https://i.imgur.com/bwMSlAL.png" alt="Swipe Left" class="swipe-arrow left" onclick="handleSwipe('left')" width="100" height="auto">
+    <img style="background-color: #f3f3f3;" src="https://i.imgur.com/KNPuDhH.png" alt="Swipe Right" class="swipe-arrow right" onclick="handleSwipe('right')" width="100" height="auto">
+</di>
+
+<!-- Section Droite - Vue détaillée du profil (Full screen) -->
+<div class="profile-view fullscreen hidden" id="profileView">
+    <span class="close-btn" onclick="closeProfile()">&times;</span>
+    <img src="https://i.imgur.com/hXGsjyA.jpeg" alt="Detailed Profile Photo" class=mainImage>
+    <h3>Bio</h3>
+    <p>- Mes atouts : </p>
+    <p>- Mes defauts : parfait </p>
+    <p>- Mes attentes : <p>
+    
+    <!-- Galerie d'images -->
+    <div class="photo-gallery">
+        <img src="https://i.imgur.com/R3ubrFE.jpeg/200" alt="Photo 1">
+        <img src="https://i.imgur.com/3KI39cq.jpeg/200" alt="Photo 2">
+        <img src="https://i.imgur.com/bFS8JPU.jpeg/200" alt="Photo 3">
+        <img src="https://i.imgur.com/itnDfb5.jpeg/200" alt="Photo 4">
+        <img src="https://i.imgur.com/ioSV7jW.jpeg/200" alt="Photo 5">
+      <img src="https://i.imgur.com/Rfd2FbD.jpeg/200" alt="Photo 6">
+        <img src="https://i.imgur.com/SEJKOmv.jpeg/200" alt="Photo 7">
+        <img src="https://i.imgur.com/EFVkeZ1.jpeg/200" alt="Photo 8">
+        <img src="https://i.imgur.com/Ko82RlG.jpeg/200" alt="Photo 9">
+        <img src="https://i.imgur.com/Ribnli4.jpeg/200" alt="Photo 10">
+    </div>
+  
+</div>
+
+<!-- Notifications pour les animations -->
+<div class="notification" id="notification">
+    <p id="notificationText"></p>
+</div>
+  
+  
+<!-- Ajoute ce bloc dans ton fichier HTML -->
+<div class="rain-container" id="rainContainer">
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+    <div class="rain-drop"></div>
+</div>
+
+<div class="error-message" id="errorMessage">
+    OOOOh noooon quel dommaaaaage, pas d'autres profils disponibles !
+</div>
+
+    
+<div id="fireworks-container"></div>
+
+
+<!-- Sons pour les animations -->
+<audio id="helloDarkness" src="https://drive.google.com/file/d/1HJ0dRcyAOuK5VTEWuUppk_ChER41Ef2H/view?usp=sharing" preload="auto"></audio>
+<audio id="celebrationSound" src="https://www.myinstants.com/media/sounds/celebration.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
