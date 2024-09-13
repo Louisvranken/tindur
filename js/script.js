@@ -82,7 +82,7 @@ function handleSwipe(direction) {
             errorMessage.style.display = 'none';
             rainContainer.style.display = 'none';
             body.classList.remove('grayscale');
-        }, 6000);
+        }, 8000);
     }
 }
 
