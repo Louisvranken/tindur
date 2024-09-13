@@ -157,7 +157,7 @@ function launchFireworks() {
         for (let i = 0; i < 10; i++) {
             createFirework(); // Créer plusieurs particules à la fois
         }
-    }, 5000); // Créer des feux d'artifice toutes les 5 secondes
+    }, 3000); // Créer des feux d'artifice toutes les 5 secondes
 
     // Arrêter les feux d'artifice après 15 secondes
     setTimeout(() => {
