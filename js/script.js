@@ -77,7 +77,7 @@ function handleSwipe(direction) {
         setTimeout(() => {
             if (helloDarkness) {
                 helloDarkness.pause();
-                helloDarkness.currentTime = 3;
+                helloDarkness.currentTime = 0;
             }
             errorMessage.style.display = 'none';
             rainContainer.style.display = 'none';
