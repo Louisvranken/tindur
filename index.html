@@ -96,27 +96,27 @@
   <div class="main-container">
     <!-- Conteneur des boutons en dehors de profile-card -->
     <div class="buttons-container">
-        <img id="dislikeButton" src="https://i.imgur.com/18FAXLL.png" alt="Dislike" class="dislike-button" onclick="handleDislike()">
-        <img src="https://i.imgur.com/xa9bzQ4.png" alt="Super Like" class="superlike-button" onclick="triggerLikeAnimation()">
-        <img src="https://i.imgur.com/gD4lvyZ.png" alt="Like" class="like-button" onclick="triggerLikeAnimation()">
+        <img id="dislikeButton" src="medias/images/boutons/dislike.png" alt="Dislike" class="dislike-button" onclick="handleDislike()">
+        <img src="medias/images/boutons/superlike.png" alt="Super Like" class="superlike-button" onclick="triggerLikeAnimation()">
+        <img src="medias/images/boutons/like.png" alt="Like" class="like-button" onclick="triggerLikeAnimation()">
     </div>
 
     <!-- Conteneur de célébration (avec l'image rebondissante) -->
     <div class="celebration-container" id="celebrationContainer" style="display: none;">
-        <img src="https://i.imgur.com/u2dsIxR.png" alt="It's a Match!" class="match-image" id="matchImage">
+        <img src="medias/images/boutons/itsaMatch.png" alt="It's a Match!" class="match-image" id="matchImage">
         <div class="fireworks-container" id="fireworksContainer"></div>
     </div>
     
   
     <!-- Flèches pour swiper -->
-    <img style="background-color: #f3f3f3;" src="https://i.imgur.com/bwMSlAL.png" alt="Swipe Left" class="swipe-arrow left" onclick="handleSwipe('left')" width="100" height="auto">
-    <img style="background-color: #f3f3f3;" src="https://i.imgur.com/KNPuDhH.png" alt="Swipe Right" class="swipe-arrow right" onclick="handleSwipe('right')" width="100" height="auto">
+    <img style="background-color: #f3f3f3;" src="medias/images/boutons/swipeLeft.png" alt="Swipe Left" class="swipe-arrow left" onclick="handleSwipe('left')" width="100" height="auto">
+    <img style="background-color: #f3f3f3;" src="medias/images/boutons/swipeRight.png" alt="Swipe Right" class="swipe-arrow right" onclick="handleSwipe('right')" width="100" height="auto">
 </di>
 
 <!-- Section Droite - Vue détaillée du profil (Full screen) -->
 <div class="profile-view fullscreen hidden" id="profileView">
     <span class="close-btn" onclick="closeProfile()">&times;</span>
-    <img src="https://i.imgur.com/hXGsjyA.jpeg" alt="Detailed Profile Photo" class=mainImage>
+    <img src="medias/images/gallerie/louis24h.jpg" alt="Detailed Profile Photo" class=mainImage>
     <h3>Bio</h3>
     <p>- Mes atouts : </p>
     <p>- Mes defauts : parfait </p>
@@ -124,16 +124,16 @@
     
     <!-- Galerie d'images -->
     <div class="photo-gallery">
-        <img src="https://i.imgur.com/R3ubrFE.jpeg/200" alt="Photo 1">
-        <img src="https://i.imgur.com/3KI39cq.jpeg/200" alt="Photo 2">
-        <img src="https://i.imgur.com/bFS8JPU.jpeg/200" alt="Photo 3">
-        <img src="https://i.imgur.com/itnDfb5.jpeg/200" alt="Photo 4">
-        <img src="https://i.imgur.com/ioSV7jW.jpeg/200" alt="Photo 5">
-      <img src="https://i.imgur.com/Rfd2FbD.jpeg/200" alt="Photo 6">
-        <img src="https://i.imgur.com/SEJKOmv.jpeg/200" alt="Photo 7">
-        <img src="https://i.imgur.com/EFVkeZ1.jpeg/200" alt="Photo 8">
-        <img src="https://i.imgur.com/Ko82RlG.jpeg/200" alt="Photo 9">
-        <img src="https://i.imgur.com/Ribnli4.jpeg/200" alt="Photo 10">
+        <img src="medias/images/gallerie/louisSki.jpeg" alt="Photo 1">
+        <img src="medias/images/gallerie/louisMatinale.jpg" alt="Photo 2">
+        <img src="medias/images/gallerie/louisLunette.jpeg" alt="Photo 3">
+        <img src="medias/images/gallerie/louissauscissons.jpeg" alt="Photo 4">
+        <img src="medias/images/gallerie/louisPue.jpg" alt="Photo 5">
+        <img src="medias/images/gallerie/louisHerbe.jpeg" alt="Photo 6">
+        <img src="medias/images/gallerie/louisPerpi.jpg" alt="Photo 7">
+        <img src="medias/images/gallerie/louisCapote.jpeg" alt="Photo 8">
+        <img src="medias/images/gallerie/louisMans.jpeg" alt="Photo 9">
+        <img src="medias/images/gallerie/louisMichauve.jpeg" alt="Photo 10">
     </div>
   
 </div>
@@ -166,7 +166,7 @@
 
 
 <!-- Sons pour les animations -->
-<audio id="helloDarkness" src="https://drive.google.com/file/d/1HJ0dRcyAOuK5VTEWuUppk_ChER41Ef2H/view?usp=sharing" preload="auto"></audio>
+<audio id="helloDarkness" src="medias/musiques/triste.mp3" preload="auto"></audio>
 <audio id="celebrationSound" src="https://www.myinstants.com/media/sounds/celebration.mp3"></audio>
 
 <script src="js/script.js"></script>
