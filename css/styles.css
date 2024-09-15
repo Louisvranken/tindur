@@ -188,7 +188,7 @@ body {
     right: 20px;
 }
 
-/* Section Droite - Vue détaillée du profil (Full screen) */
+/* Vue détaillée du profil - Fullscreen */
 .fullscreen {
     position: fixed;
     top: 0;
@@ -199,8 +199,6 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     z-index: 1000;
     overflow: hidden;
 }
@@ -209,47 +207,66 @@ body {
     display: none;
 }
 
+/* Conteneur principal pour la photo et la bio */
+.profile-container {
+    display: flex;
+    flex-direction: row; /* Affiche la photo et la bio côte à côte */
+    height: 70%; /* Ajuster si nécessaire */
+}
+
+/* Photo principale */
+.photo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Ajoute un défilement si le contenu déborde */
+}
+
+.photo-section img {
+    max-width: 90%; /* Limite la largeur maximale de l'image */
+    max-height: 80%; /* Limite la hauteur maximale de l'image */
+    object-fit: contain; /* Maintient le ratio d'aspect de l'image */
+    border-radius: 10px; /* Optionnel : arrondir les coins de l'image */
+}
+
+/* Bio */
+.bio-section {
+    flex: 1.5;
+    padding: 20px;
+    overflow: auto; /* Ajoute un défilement si le contenu déborde */
+}
+
+/* Galerie */
+.gallery-section {
+    height: 30%;
+    padding: 10px;
+    overflow-x: scroll; /* Défilement horizontal pour la galerie */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Style pour les images de la galerie */
+.gallery-section img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery-section img:hover {
+    transform: scale(1.3);
+}
+
+/* Fermer la vue détaillée du profil */
 .close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 30px;
     cursor: pointer;
-}
-
-/* Paragraphe : texte blanc et aligné à gauche */
-.profile-view p {
-    color: white;
-    text-align: left;
-}
-
-/* Titre "Bio" : en gras et centré */
-.profile-view h3 {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-.mainImage{
-  width: 300px;  
-  height: 400px;
-  object-fit: cover;
-  border-radius: 30px;
-}
-.photo-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.photo-gallery img {
-    width: 130px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.photo-gallery img:hover {
-    transform: scale(1.3);
+    z-index: 1100;
 }
 
 /* Notifications */
