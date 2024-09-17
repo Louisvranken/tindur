@@ -100,7 +100,7 @@ function triggerLikeAnimation() {
     // Appliquer le flou
     document.querySelector('.sidebar').classList.add('blur-background');
     document.querySelector('.profile-card').classList.add('blur-background');
-    document.querySelector('.buttons-container').classList.add('blur-background');
+    document.querySelector('.buttons-placeholder').classList.add('blur-background');
     document.querySelector('.swipe-arrow').classList.add('blur-background');
     document.querySelector('.swipe-arrow.right').classList.add('blur-background');
   
