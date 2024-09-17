@@ -77,6 +77,9 @@ body {
     object-fit: cover;
     aspect-ratio: 1 / 1;
 }
+.match img:hover {
+    transform: scale(4);
+}
 
 .match div {
     color: white;
