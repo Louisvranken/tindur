@@ -108,19 +108,32 @@ body {
     width: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     z-index: 1; /* S'assurer que la carte a un z-index inférieur aux boutons */
 }
 /* Zone vide pour les boutons */
 .buttons-placeholder {
-    height: 50px; /* Ajuster selon la taille des boutons */
+    width:100%;
+    overflow: visible;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.buttons-placeholder img {
+    width: 17%;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
 }
 .profile-photo {
     width: 100%;
     cursor: pointer;
     height: 400px;
     object-fit: cover;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
 }
 
 .profile-details {
@@ -178,11 +191,11 @@ body {
 }
 
 .swipe-arrow.left {
-    left: 20px;
+    left: 10%;
 }
 
 .swipe-arrow.right {
-    right: 20px;
+    right: 10%;
 }
 
 /* Vue détaillée du profil - Fullscreen */
