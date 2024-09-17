@@ -97,16 +97,17 @@
             <p>Homme célibataire blanc hétéro cisgenre de type bipède</p>
         </div>
         <!-- Zone vide pour les boutons -->
-        <div class="buttons-placeholder"></div>
+        <div class="buttons-placeholder">
+            <img id="dislikeButton" src="medias/images/boutons/dislike.png" alt="Dislike" class="dislike-button" onclick="handleDislike()">
+            <img src="medias/images/boutons/superlike.png" alt="Super Like" class="superlike-button" onclick="triggerLikeAnimation()">
+            <img src="medias/images/boutons/like.png" alt="Like" class="like-button" onclick="triggerLikeAnimation()">
+    
+        </div>
     </div>
   
   <div class="main-container">
     <!-- Conteneur des boutons en dehors de profile-card -->
-    <div class="buttons-container">
-        <img id="dislikeButton" src="medias/images/boutons/dislike.png" alt="Dislike" class="dislike-button" onclick="handleDislike()">
-        <img src="medias/images/boutons/superlike.png" alt="Super Like" class="superlike-button" onclick="triggerLikeAnimation()">
-        <img src="medias/images/boutons/like.png" alt="Like" class="like-button" onclick="triggerLikeAnimation()">
-    </div>
+    
 
     <!-- Conteneur de célébration (avec l'image rebondissante) -->
     <div class="celebration-container" id="celebrationContainer" style="display: none;">
