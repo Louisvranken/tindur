@@ -143,9 +143,6 @@ body {
     display: flex;
     justify-content: space-around;
     position: fixed; /* Changement en 'fixed' pour s'assurer que les boutons sont visibles sur toute la page */
-    bottom: 115px; /* Positionné en bas de la fenêtre */
-    left: 52.5%;
-    transform: translateX(-50%);
     width: 300px; /* Ajustez selon vos besoins */
     z-index: 1000; /* Très haut z-index pour que les  Couleur de fond pour visibilité */
     padding: 10px;
