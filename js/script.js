@@ -121,7 +121,7 @@ function triggerLikeAnimation() {
         celebrationContainer.style.display = 'none';
         document.querySelector('.sidebar').classList.remove('blur-background');
         document.querySelector('.profile-card').classList.remove('blur-background');
-        document.querySelector('.buttons-container').classList.remove('blur-background');
+        document.querySelector('.buttons-placeholder').classList.remove('blur-background');
         document.querySelector('.swipe-arrow').classList.remove('blur-background');
         document.querySelector('.swipe-arrow.right').classList.remove('blur-background');
 
