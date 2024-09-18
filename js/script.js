@@ -55,7 +55,7 @@ function handleDislike() {
 
 function handleSwipe(direction) {
     if (direction === 'left') {
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        window.open("https://youtu.be/xvFZjo5PgG0?si=5tNA1XjZHllu6Es-", "_blank");
     } else if (direction === 'right') {
         const errorMessage = document.getElementById('errorMessage');
         const rainContainer = document.getElementById('rainContainer');
